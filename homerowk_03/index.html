@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form>
+        <h1 class="header"><legend>Please fill out the form below</legend></h1>
+
+        <div class="name-input">
+          <label class="name-label label" for="name">Full name </label>
+          <input type="text" id="name" class="input" />
+        </div>
+
+        <div class="email-input">
+          <label class="email-label label" for="email">
+            Your e-mail address
+          </label>
+          <input type="email" id="email" class="input" />
+        </div>
+
+        <div class="tel-input">
+          <label class="tel-label label" for="tel"> Your phone number </label>
+          <input type="tel" id="tel" class="input" />
+        </div>
+
+        <div class="select-input">
+          <label class="select-label label" for="name">
+            Select your country
+          </label>
+          <select class="select">
+            <option value="value1">UA</option>
+            <option value="value2" selected>UK</option>
+            <option value="value3">USA</option>
+            <option value="value3">PL</option>
+            <option value="value3">CND</option>
+          </select>
+        </div>
+
+        <div class="radio-input">
+          <label class="label-choice"> I want to attend event </label>
+          <input
+            type="radio"
+            class="label-choice-item"
+            id="online"
+            name="choice"
+          />
+          <label class="label-choice label-choice-item" for="online">
+            online
+          </label>
+          <input
+            type="radio"
+            class="label-choice-item"
+            id="offline"
+            name="choice"
+          />
+          <label class="label-choice label-choice-item" for="offline">
+            offline
+          </label>
+        </div>
+
+        <div>
+          <label class="comments-label label" for="comments">Сomments </label>
+          <input class="input comment-input" type="text" id="comments" />
+        </div>
+
+        <div class="checkbox-input">
+          <input type="checkbox" name="termAgree" id="termAgree" />
+          <label class="label term-agree" for="termAgree">
+            I agree with the <a class="privacy-link" href="#">privacy policy</a>
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button class="btn-clear">Clear form</button>
+          <button class="btn-send">Submit form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

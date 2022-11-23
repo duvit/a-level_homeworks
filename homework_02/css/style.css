@@ -1,0 +1,320 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 69px;
+  text-align: center;
+  color: #000000;
+  margin-top: 100px;
+}
+
+.lead {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  margin: 47px auto 52px;
+  width: 1024px;
+}
+
+.start-btn {
+  width: 307px;
+  height: 80px;
+  background: #5e964b;
+  border-radius: 10px;
+  border: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto 68px;
+}
+
+.main-nav {
+  text-align: center;
+  margin: 0 0 100px;
+}
+
+.main-nav-item {
+  display: inline;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 73px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.lead-subtitle {
+  width: 100%;
+  background: #cccccc;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #ffffff;
+  padding: 77px 0 77px;
+  margin: 0 auto 100px;
+}
+
+.container {
+  width: 1300px;
+  background: #cccccc;
+  margin: 0 auto 150px;
+}
+
+.container-items {
+  display: flex;
+  padding: 40px 50px 85px;
+}
+
+.container-item {
+  width: 350px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 70px 20px 20px;
+  margin: 0 25px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.green {
+  color: #5e964b;
+  font-weight: bold;
+}
+
+.container-description {
+  width: 600px;
+  margin-left: 50px;
+}
+
+.container-description-title {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.container-description-subtitle {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 77px;
+}
+
+.checkin-btn {
+  width: 244px;
+  height: 80px;
+  background: #ffffff;
+  border: 2px solid #5e964b;
+  border-radius: 10px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5e964b;
+  margin-bottom: 50px;
+}
+
+.footer {
+  /* width: 722px; */
+  text-align: right;
+  margin: 0 120px 166px 0;
+}
+
+.footer-nav {
+  margin-bottom: 40px;
+}
+
+.footer-nav-item {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.copy {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}

@@ -1,0 +1,384 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ці стилі доволі не гарні і не оптимізовані, але всі сили пішли на кастомізацію radio, checkbox і т.д. */
+
+.wrapper {
+  width: 1440px;
+  height: 1200px;
+}
+
+.header {
+  font-size: 32px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin: 50px 0 51px 10px;
+}
+
+.name-input {
+  margin-bottom: 37px;
+  margin-left: 13px;
+}
+
+.label {
+  display: block;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-bottom: 14px;
+}
+
+.name-label {
+  margin-bottom: 14px;
+}
+
+.input {
+  display: block;
+  width: 800px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  border: 2px solid #808080;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding-left: 22px;
+}
+
+.email-input {
+  margin-bottom: 37px;
+  margin-bottom: 14px;
+}
+
+.email-label {
+  margin-bottom: 14px;
+}
+
+.tel-input {
+  margin-bottom: 38px;
+  margin-left: 13px;
+}
+
+.tel-label {
+  margin-bottom: 10px;
+}
+
+.select-label {
+  margin-bottom: 10px;
+}
+
+.select-input {
+  margin-bottom: 40px;
+  margin-left: 13px;
+}
+
+.select {
+  display: block;
+  width: 800px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  border: 2px solid #808080;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding-left: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../img/check-mark.png);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 757px 50%;
+}
+
+.radio-input {
+  margin-bottom: 50px;
+  margin-left: 12px;
+}
+
+.label-choice {
+  display: block;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-bottom: 24px;
+}
+
+[type="radio"] {
+  opacity: 0%;
+}
+
+[type="radio"] + .label-choice {
+  position: relative;
+  padding-left: 43px;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  line-height: 1px;
+}
+
+[type="radio"] + .label-choice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+  border: 2px solid #808080;
+}
+
+[type="radio"]:checked + .label-choice::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: #808080;
+  border: 0px solid #808080;
+}
+
+.comments-label {
+  margin-left: 10px;
+}
+
+.comment-input {
+  width: 800px;
+  height: 100px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.checkbox-input {
+  margin-bottom: 38px;
+}
+
+[type="checkbox"] {
+  opacity: 0;
+}
+
+[type="checkbox"] + .term-agree {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: #000000;
+}
+
+[type="checkbox"] + .term-agree::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: -4px;
+  width: 29px;
+  height: 29px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  outline: 2px solid #808080;
+}
+
+[type="checkbox"]:checked + .term-agree::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: -4px;
+  width: 29px;
+  height: 29px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  outline: 2px solid #0bd336;
+}
+
+[type="checkbox"]:checked + .term-agree::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/tick-mark.png);
+  background-size: contain;
+}
+
+.privacy-link {
+  color: #25256e;
+  text-decoration: none;
+}
+
+.buttons {
+  width: 800px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-clear {
+  font-size: 24px;
+  color: #808080;
+  font-weight: 400;
+  font-family: "Roboto";
+  width: 360px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  border: 0px solid #808080;
+}
+
+.btn-send {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  width: 360px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: #000000;
+  border: 0px solid #808080;
+}

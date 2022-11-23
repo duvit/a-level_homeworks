@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #f5fcff;
+  position: relative;
+}
+
+.sun {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/sun.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.clouds {
+  height: 200px;
+  width: 100%;
+  top: 50px;
+  background-image: url(../img/cloud.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+}
+
+.cat {
+  height: 500px;
+  width: 100%;
+  bottom: 0;
+  background-image: url(../img/cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+}
+
+.grass {
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  background-image: url(../img/grass.png);
+  
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+}
